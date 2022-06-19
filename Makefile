@@ -8,19 +8,27 @@ lint:
 	poetry run flake8 brain_games tests/
 
 format:
-	poetry run isort --profile black brain_games tests --diff
-	poetry run black brain_games tests --diff
+	poetry run isort --profile black brain_games tests
+	poetry run black brain_games tests
 
-sec-check:
+bandit:
 	poetry run bandit -r brain_games tests
+
+safety:
 	poetry run safety check
 
 selfcheck:
 	poetry check
 
-check: selfcheck test lint format
+check: selfcheck test format lint
 
 build: check
 	poetry build
+
+publish:
+	poetry publish --dry-run
+
+package-install:
+	python3 -m pip install --user --force-reinstall dist/*.whl
 
 .PHONY: install test lint selfcheck check build
