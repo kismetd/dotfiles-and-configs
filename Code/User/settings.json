@@ -1,0 +1,37 @@
+{
+    // VS interface, themes, icons
+    "workbench.colorTheme": "Default Dark+",
+    "workbench.startupEditor": "none",
+    "workbench.iconTheme": "material-icon-theme",
+    // Fonts
+    "editor.fontFamily": "'Droid Sans Mono', 'monospace', monospace",
+    "editor.fontSize": 14,
+    // Intergrated terminal
+    "terminal.integrated.defaultProfile.linux": "zsh",
+    "terminal.integrated.fontFamily": "monospace",
+    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.fontWeight": "400",
+    // Pylance, get rid of weird automatic import statements
+    "python.analysis.typeCheckingMode": "basic",
+    "python.analysis.autoImportCompletions": false,
+    // Formatting for Python
+    "python.formatting.provider": "black",
+    "editor.formatOnSave": true,
+    // Linting for Python
+    "python.linting.enabled": true,
+    "python.linting.flake8Enabled": true,
+    "python.linting.banditEnabled": true,
+    "python.linting.lintOnSave": true,
+    //Sort imports on save
+    "[python]": {
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true
+        },
+    },
+    // Test setup for Python
+    "python.testing.pytestEnabled": true,
+    // Jupyter
+    "jupyter.askForKernelRestart": false,
+    // Other
+    "security.workspace.trust.untrustedFiles": "open",
+}
