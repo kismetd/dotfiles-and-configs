@@ -1,2 +1,2 @@
 # dotfiles-and-configs
-Reusable config files for personal use
+Reusable config files or references to some configs.

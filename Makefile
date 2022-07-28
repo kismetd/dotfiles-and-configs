@@ -5,14 +5,14 @@ test:
 	poetry run pytest
 
 lint:
-	poetry run flake8 brain_games tests/
+	poetry run flake8 package/ tests/
 
 format:
-	poetry run isort --profile black brain_games tests
-	poetry run black brain_games tests
+	poetry run isort --profile black package/ tests/
+	poetry run black package/ tests/
 
 bandit:
-	poetry run bandit -r brain_games tests
+	poetry run bandit -r package tests
 
 safety:
 	poetry run safety check

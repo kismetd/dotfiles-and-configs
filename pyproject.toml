@@ -1,12 +1,12 @@
 [tool.poetry]
-name = "hexlet-code-lvl1"
+name = "package-name"
 version = "0.1.0"
 description = "Project to practice using poetry for dependency management."
 authors = ["kismetd <hlevnmaxim@gmail.com>"]
 license = "MIT"
 readme = "README.md"
 packages = [
-    { include = "brain_games" },
+    { include = "package-name" },
 ]
 
 [tool.poetry.dependencies]
@@ -27,4 +27,4 @@ requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
-brain-games = "brain_games.scripts.brain_games:main"
+brain-games = "package-name.scripts.package-name:main"
